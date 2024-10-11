@@ -190,7 +190,7 @@ declare namespace Server {
         /** Specify whether you want to follow redirects. Default: false */
         followRedirects?: boolean | undefined;
         /** If set to true, none of the webOutgoing passes are called and it's your responsibility to appropriately return the response by listening and acting on the proxyRes event */
-        selfHandleResponse?: boolean | undefined;
+        selfHandleResponse?: boolean | undefined | Function;
         /** Buffer */
         buffer?: stream.Stream | undefined;
         /** Explicitly set the method type of the ProxyReq */
